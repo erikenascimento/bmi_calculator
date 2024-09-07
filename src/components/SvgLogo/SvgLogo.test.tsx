@@ -5,8 +5,8 @@ import { render, screen } from "@testing-library/react";
 // Custom components
 import SvgLogo from ".";
 
-describe("Svg", () => {
-	test("renders", () => {
+describe("Checking if the SVG component", () => {
+	test("is properly rendering", () => {
 		render(<SvgLogo />);
 		expect(screen.getByTestId("SvgLogo")).toBeDefined();
 	});

@@ -1,5 +1,13 @@
 import React from "react";
+// css
+import styles from "./page.module.scss";
+// Custom components
+import SvgLogo from "@/components/SvgLogo";
 
 export default function HomePage() {
-	return <div>Homeage</div>;
+	return (
+		<section className={styles.homePage}>
+			<SvgLogo />
+		</section>
+	);
 }

@@ -1,0 +1,9 @@
+.homePage {
+    // Flex
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Spacing
+    margin-top: var(--spacing-m);
+    row-gap: var(--spacing-s); // This is the minimum spacing between components
+}

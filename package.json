@@ -8,7 +8,8 @@
 		"start": "next start",
 		"lint": "next lint",
 		"test": "jest --watch",
-		"prepare": "husky"
+		"prepare": "husky",
+		"test:coverage": "jest --coverage"
 	},
 	"dependencies": {
 		"next": "14.2.8",

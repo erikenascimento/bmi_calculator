@@ -9,6 +9,8 @@ const SvgLogo = () => {
 			fill="none"
 			viewBox="0 0 64 64"
 			data-testid="SvgLogo"
+			role="img"
+			aria-label="The page logo: a light blue circle filled with a couple of wavy horizontal lines with a solid smaller circle in the center"
 		>
 			<path
 				fill="#B3D3F1"

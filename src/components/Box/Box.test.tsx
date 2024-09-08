@@ -6,7 +6,7 @@ import Box from "./";
 describe("Checks if the Box component", () => {
 	test("will render with correct width from the appropriate global css variable", () => {
 		render(
-			<Box tagKind="main" testId="boxTestId">
+			<Box tagKind="section" testId="boxTestId">
 				Content
 			</Box>
 		);

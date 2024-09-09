@@ -4,6 +4,7 @@ import styles from "./page.module.scss";
 // Custom components
 import SvgLogo from "@/components/SvgLogo";
 import HeadArticle from "@/components/HeadArticle";
+import CalculatorBox from "@/components/CalculatorBox";
 
 export default function HomePage() {
 	return (
@@ -12,6 +13,9 @@ export default function HomePage() {
 				<SvgLogo />
 				<HeadArticle />
 			</header>
+			<main>
+				<CalculatorBox />
+			</main>
 		</body>
 	);
 }

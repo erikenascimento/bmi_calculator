@@ -1,11 +1,11 @@
 import React from "react";
 // css
 import styles from "./HeadArticle.module.scss";
-import Box from "../Box";
+import Wrapper from "../Wrapper";
 
 const HeadArticle = () => {
 	return (
-		<Box tagKind="section">
+		<Wrapper tagKind="section">
 			<article data-testid="headArticle" className={styles.headArticle}>
 				<h1 data-testid="articleHeading">Body Mass Index Calculator</h1>
 				<p data-testid="articleParagraph">
@@ -15,7 +15,7 @@ const HeadArticle = () => {
 					your overall health and well-being.
 				</p>
 			</article>
-		</Box>
+		</Wrapper>
 	);
 };
 

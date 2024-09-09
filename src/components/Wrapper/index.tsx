@@ -13,7 +13,7 @@ interface IBoxProps {
 // The idea here is to change the html tag of this component dynamically based on props
 // for that we type the div as the tagKind prop via keyof
 const StyledBox = styled.div<{ as?: keyof JSX.IntrinsicElements }>`
-	width: var(--box-width-s);
+	width: var(--wrapper-width-s);
 `;
 
 const Box: React.FC<IBoxProps> = ({ tagKind, children, testId }) => {

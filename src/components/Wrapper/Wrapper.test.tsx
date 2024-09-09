@@ -1,14 +1,14 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import Box from "./";
+import Wrapper from ".";
 
-describe("Checks if the Box component", () => {
+describe("Checks if the Wrapper component", () => {
 	test("will render with correct width from the appropriate global css variable", () => {
 		render(
-			<Box tagKind="section" testId="boxTestId">
+			<Wrapper tagKind="section" testId="wrapperTestId">
 				Content
-			</Box>
+			</Wrapper>
 		);
 
 		// Since this component uses styled components with next which is client-sided
@@ -16,10 +16,10 @@ describe("Checks if the Box component", () => {
 		// component before the style is applied
 		setTimeout(() => {
 			const computedStyle = window.getComputedStyle(
-				screen.getByTestId("boxTestId")
+				screen.getByTestId("wrapperTestId")
 			);
 
-			expect(computedStyle.width).toBe("var(--box-width-s)");
+			expect(computedStyle.width).toBe("var(--wrapper-width-s)");
 		}, 5000); // 5 seconds delay
 	});
 });

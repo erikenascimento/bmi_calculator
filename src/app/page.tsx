@@ -8,8 +8,10 @@ import HeadArticle from "@/components/HeadArticle";
 export default function HomePage() {
 	return (
 		<section className={styles.homePage}>
-			<SvgLogo />
-			<HeadArticle />
+			<header>
+				<SvgLogo />
+				<HeadArticle />
+			</header>
 		</section>
 	);
 }

@@ -3,17 +3,17 @@ import React from "react";
 import { describe, expect, test, beforeAll } from "vitest";
 import { render, screen } from "@testing-library/react";
 // Custom components
-import MainContent from ".";
+import HeadArticle from ".";
 
-describe("Testing if the MainContent component", () => {
+describe("Testing if the HeadArticle component", () => {
 	// beforeAll is used to avoid multiple rendering for each test
 	beforeAll(() => {
-		render(<MainContent />);
+		render(<HeadArticle />);
 	});
 
 	test("renders properly", () => {
-		const mainContent = screen.getByTestId("headArticle");
-		expect(mainContent).toBeDefined();
+		const headArticle = screen.getByTestId("headArticle");
+		expect(headArticle).toBeDefined();
 	});
 
 	test("contains a heading", () => {

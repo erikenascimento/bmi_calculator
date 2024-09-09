@@ -1,3 +1,40 @@
 .calculatorBox {
+    // Flex
+    display: flex;
+
+    flex-direction: column;
+    row-gap: var(--spacing-s);
+    // Styles
     background-color: white;
+    // Form
+    padding: var(--spacing-s);
+    border-radius: 10px;
+
+    &__heading {
+        font-size: var(--heading-s);
+    }
+
+    &__unitsDiv {
+        //Flex
+        display: flex;
+
+        align-items: center;
+        column-gap: var(--spacing-s);
+
+        &__unit {
+            // Flex
+            display: flex;
+
+            column-gap: 18px;
+            // Dimensions
+            width: 128px; // This value should be temporary
+            &__type {
+                display: flex;
+
+                align-items: center;
+                // Typography
+                font-weight: 600;
+            }
+        }
+    }
 }

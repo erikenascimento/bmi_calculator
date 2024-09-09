@@ -23,10 +23,5 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			{/* <body className={`${geistSans.variable} ${geistMono.variable}`}> */}
-			<body>{children}</body>
-		</html>
-	);
+	return <html lang="en">{children}</html>;
 }

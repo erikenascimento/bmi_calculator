@@ -1,10 +1,18 @@
-.homePage {
+.homePage,
+.homePage__header {
     // Flex
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.homePage {
     // Spacing
     margin-top: var(--spacing-m);
-    row-gap: var(--spacing-s); // This is the minimum spacing between components
+    row-gap: calc(2 * (var(--spacing-s)));
+
+    &__header {
+        row-gap: var(--spacing-s);
+    }
 }

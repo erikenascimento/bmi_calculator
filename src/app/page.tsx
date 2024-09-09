@@ -7,11 +7,11 @@ import HeadArticle from "@/components/HeadArticle";
 
 export default function HomePage() {
 	return (
-		<section className={styles.homePage}>
-			<header>
+		<body className={styles.homePage}>
+			<header className={styles.homePage__header}>
 				<SvgLogo />
 				<HeadArticle />
 			</header>
-		</section>
+		</body>
 	);
 }

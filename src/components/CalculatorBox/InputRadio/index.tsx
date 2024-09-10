@@ -7,7 +7,13 @@ interface IRadioProps {
 }
 
 const InputRadio: React.FC<IRadioProps> = ({ checked }) => {
-	return <input type="radio" className={styles.inputRadio} />;
+	return (
+		<input
+			type="radio"
+			className={styles.inputRadio}
+			data-testid="inputRadio"
+		/>
+	);
 };
 
 export default InputRadio;

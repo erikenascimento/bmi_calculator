@@ -7,6 +7,7 @@ import CalculatorBox from ".";
 
 describe("Testing if the CalculatorBox component", () => {
 	// beforeAll is used to avoid multiple rendering for each test
+	// this beforeAll is useless right now but will be important later
 	beforeAll(() => {
 		render(<CalculatorBox />);
 	});

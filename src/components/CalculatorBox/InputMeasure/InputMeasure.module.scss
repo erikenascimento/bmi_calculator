@@ -1,0 +1,31 @@
+.inputDiv {
+    position: relative;
+
+    &__inputMeasure {
+        // Border
+        border-radius: 12px;
+        border-width: 1.5px;
+        // Dimensions
+        padding: var(--spacing-s);
+
+        height: 70px;
+        width: 100%;
+        // Typography
+        color: var(--color-gunmetal);
+    }
+
+    &__inputMeasure,
+    &__unit {
+        font-size: var(--heading-s);
+        font-weight: bold;
+    }
+
+    &__unit {
+        // Position
+        position: absolute;
+        right: var(--spacing-s);
+        top: calc(50% - 17px); // Half of the input/ half of the span
+        // Typography
+        color: var(--color-blue);
+    }
+}

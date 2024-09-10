@@ -4,6 +4,7 @@ import styles from "./CalculatorBox.module.scss";
 // Custom components
 import Wrapper from "../Wrapper";
 import InputRadio from "./InputRadio";
+import InputMeasure from "./InputMeasure";
 
 const CalculatorBox: React.FC = () => {
 	return (
@@ -25,6 +26,24 @@ const CalculatorBox: React.FC = () => {
 							Imperial
 						</span>
 					</div>
+				</div>
+				<div className={styles.calculatorBox__inputDiv}>
+					<label
+						htmlFor="height"
+						className={styles.calculatorBox__inputDiv__label}
+					>
+						Height
+					</label>
+					<InputMeasure unit="cm" label="height" min={50} max={300} />
+				</div>
+				<div className={styles.calculatorBox__inputDiv}>
+					<label
+						htmlFor="weight"
+						className={styles.calculatorBox__inputDiv__label}
+					>
+						Weight
+					</label>
+					<InputMeasure unit="kg" label="weight" min={20} max={700} />
 				</div>
 			</section>
 		</Wrapper>

@@ -37,4 +37,16 @@
             }
         }
     }
+
+    &__inputDiv {
+        // Flex
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+
+        &__label {
+            color: #5e6e85;
+            font-size: var(--font-size-s);
+        }
+    }
 }

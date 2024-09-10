@@ -19,6 +19,8 @@ const InputMeasure: React.FC<IInputMeasure> = ({ unit, label, min, max }) => {
 				min={min}
 				max={max}
 				maxLength={3}
+				pattern="\d{3}"
+				inputMode="numeric"
 				className={styles.inputDiv__inputMeasure}
 				placeholder="0"
 			/>

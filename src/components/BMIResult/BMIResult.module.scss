@@ -1,0 +1,24 @@
+.bmiResult {
+    background-color: var(--color-blue);
+    border-radius: 16px;
+    padding: var(--spacing-m);
+
+    &__data,
+    &__text {
+        color: white;
+    }
+
+    &__data {
+        // Spacing
+        display: block; // Since it's a data element, it needs to be set as a block element
+        margin-top: 0.5rem;
+        margin-bottom: var(--spacing-s);
+        // Typography
+        font-size: var(--heading-l);
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: var(--font-size-s);
+    }
+}

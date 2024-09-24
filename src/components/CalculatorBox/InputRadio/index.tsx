@@ -12,6 +12,7 @@ const InputRadio: React.FC<IRadioProps> = ({ checked }) => {
 			type="radio"
 			className={styles.inputRadio}
 			data-testid="inputRadio"
+			name="selectedUnit"
 		/>
 	);
 };

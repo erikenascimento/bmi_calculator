@@ -5,6 +5,7 @@ import styles from "./CalculatorBox.module.scss";
 import Wrapper from "../Wrapper";
 import InputRadio from "./InputRadio";
 import InputMeasure from "./InputMeasure";
+import BMIResult from "../BMIResult";
 
 const CalculatorBox: React.FC = () => {
 	return (
@@ -45,6 +46,7 @@ const CalculatorBox: React.FC = () => {
 					</label>
 					<InputMeasure unit="kg" label="weight" min={20} max={700} />
 				</div>
+				<BMIResult />
 			</section>
 		</Wrapper>
 	);

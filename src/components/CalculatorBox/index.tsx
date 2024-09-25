@@ -1,4 +1,6 @@
-import React from "react";
+"use client"; // useState requires use client
+
+import React, { useState } from "react";
 // css
 import styles from "./CalculatorBox.module.scss";
 // Custom components
@@ -8,6 +10,12 @@ import InputMeasure from "./InputMeasure";
 import BMIResult from "../BMIResult";
 
 const CalculatorBox: React.FC = () => {
+	const [selectedUnit, setSelectedUnit] = useState<string>("metric");
+
+	const handleRadioChange = (value: string) => {
+		setSelectedUnit(value);
+	};
+
 	return (
 		<Wrapper data-testid="calculatorWrapper" tagKind="section">
 			<section data-testid="calculatorBox" className={styles.calculatorBox}>
@@ -16,13 +24,13 @@ const CalculatorBox: React.FC = () => {
 				</h2>
 				<div className={styles.calculatorBox__unitsDiv}>
 					<div className={styles.calculatorBox__unitsDiv__unit}>
-						<InputRadio />
+						<InputRadio onChange={() => handleRadioChange("imperial")} />
 						<span className={styles.calculatorBox__unitsDiv__unit__type}>
 							Metric
 						</span>
 					</div>
 					<div className={styles.calculatorBox__unitsDiv__unit}>
-						<InputRadio />
+						<InputRadio onChange={() => handleRadioChange("imperial")} />
 						<span className={styles.calculatorBox__unitsDiv__unit__type}>
 							Imperial
 						</span>

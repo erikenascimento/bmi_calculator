@@ -4,15 +4,17 @@ import styles from "./InputRadio.module.scss";
 
 interface IRadioProps {
 	checked?: boolean;
+	onChange: () => void;
 }
 
-const InputRadio: React.FC<IRadioProps> = ({ checked }) => {
+const InputRadio: React.FC<IRadioProps> = ({ checked, onChange }) => {
 	return (
 		<input
 			type="radio"
 			className={styles.inputRadio}
 			data-testid="inputRadio"
 			name="selectedUnit"
+			onChange={onChange}
 		/>
 	);
 };
